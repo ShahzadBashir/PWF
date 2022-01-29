@@ -1,7 +1,13 @@
+using PWF.Services.Mail;
+using PWF.Services.Settings;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EMailSettings"));
+builder.Services.AddSingleton<IMailService, EmailService>();
 
 var app = builder.Build();
 
