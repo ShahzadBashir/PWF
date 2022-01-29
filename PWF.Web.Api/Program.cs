@@ -1,10 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using PWF.Web.Api.Data;
+using PWF.Persistence;
+
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<PWFWebApiContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("PWFWebApiContext")));
+var services = builder.Services;
+
 
 // Add services to the container.
 

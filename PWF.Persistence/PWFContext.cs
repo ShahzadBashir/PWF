@@ -1,14 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PWF.DataLayer.Models;
+using PWF.Domain.Models;
 
-namespace PWF.Web.Data
+namespace PWF.Persistence
 {
-    public class PWFContext:DbContext
+    public class PWFContext : DbContext, IPWFContext
     {
+        public PWFContext()
+        {
+        }
+
         public PWFContext(DbContextOptions<PWFContext> options)
             : base(options)
         {
-
         }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Building> Buildings { get; set; }

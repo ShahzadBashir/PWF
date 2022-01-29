@@ -2,9 +2,9 @@
 
 #nullable disable
 
-namespace PWF.Web.Migrations
+namespace PWF.Persistence.Migrations
 {
-    public partial class init : Migration
+    public partial class InitialDatabaseCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

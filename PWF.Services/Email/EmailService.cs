@@ -5,9 +5,9 @@ using PWF.Services.Models;
 using PWF.Services.Settings;
 using SmtpClient = MailKit.Net.Smtp.SmtpClient;
 
-namespace PWF.Services.Mail
+namespace PWF.Services.Email
 {
-    public class EmailService : IMailService
+    public class EmailService : IEmailService
     {
         private readonly EmailSettings _emailSettings;
 

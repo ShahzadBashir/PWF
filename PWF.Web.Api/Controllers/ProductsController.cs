@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PWF.DataLayer.Models;
+using PWF.Domain.Models;
 using PWF.Web.Api.Data;
 
 namespace PWF.Web.Api.Controllers
