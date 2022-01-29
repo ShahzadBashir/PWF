@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PWF.Web.styles.css" asp-append-version="true" />
+    @await RenderSectionAsync("Style", required: false)
+
 </head>
 <body>
     <header>
@@ -36,6 +38,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Products">Products</a>
                         </li>
                     </ul>
                 </div>
