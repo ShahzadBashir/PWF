@@ -22,4 +22,8 @@
     <ProjectReference Include="..\PWF.DataLayer\PWF.DataLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PWF.Services\PWF.Services.csproj" />
+  </ItemGroup>
+
 </Project>

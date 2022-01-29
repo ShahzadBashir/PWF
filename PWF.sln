@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PWF.Web", "PWF.Web\PWF.Web.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PWF.DataLayer", "PWF.DataLayer\PWF.DataLayer.csproj", "{FDC94C35-455E-4FDD-A030-E0DB682B2FFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PWF.Services", "PWF.Services\PWF.Services.csproj", "{66CD2D16-0A5D-4B9F-9C10-69186A016C07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FDC94C35-455E-4FDD-A030-E0DB682B2FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDC94C35-455E-4FDD-A030-E0DB682B2FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDC94C35-455E-4FDD-A030-E0DB682B2FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66CD2D16-0A5D-4B9F-9C10-69186A016C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66CD2D16-0A5D-4B9F-9C10-69186A016C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66CD2D16-0A5D-4B9F-9C10-69186A016C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66CD2D16-0A5D-4B9F-9C10-69186A016C07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
