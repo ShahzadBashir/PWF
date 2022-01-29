@@ -1,8 +1,8 @@
 ﻿using PWF.Services.Models;
 
-namespace PWF.Services.Mail
+namespace PWF.Services.Email
 {
-    public interface IMailService
+    public interface IEmailService
     {
         /// <summary>
         /// Sends email with attacments to an email address.

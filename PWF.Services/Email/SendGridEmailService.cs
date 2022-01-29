@@ -4,9 +4,9 @@ using SendGrid;
 using PWF.Services.Settings;
 using Microsoft.Extensions.Options;
 
-namespace PWF.Services.Mail;
+namespace PWF.Services.Email;
 
-public class SendGridEmailService : IMailService
+public class SendGridEmailService : IEmailService
 {
     private readonly SendGridEmailSettings _sendGridEmailSettings;
 
