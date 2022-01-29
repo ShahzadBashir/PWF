@@ -26,4 +26,9 @@
     <ProjectReference Include="..\PWF.Services\PWF.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\css\vendor\" />
+    <Folder Include="wwwroot\fonts\" />
+  </ItemGroup>
+
 </Project>
