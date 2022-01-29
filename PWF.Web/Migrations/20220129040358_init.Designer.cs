@@ -11,7 +11,7 @@ using PWF.Web.Data;
 namespace PWF.Web.Migrations
 {
     [DbContext(typeof(PWFContext))]
-    [Migration("20220129025254_init")]
+    [Migration("20220129040358_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

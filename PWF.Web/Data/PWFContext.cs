@@ -13,5 +13,6 @@ namespace PWF.Web.Data
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Building> Buildings { get; set; }
         public DbSet<Product> Products { get; set; }
+
     }
 }
