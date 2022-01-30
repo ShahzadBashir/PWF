@@ -1,4 +1,19 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@using PWF.Persistence
+@inject Microsoft.AspNetCore.Identity.SignInManager<ApplicationUser> _signInManager
+@inject UserManager<ApplicationUser> UserManager
+@{
+    bool isAdmin = false;
+    bool isCustomer = false;
+    if (_signInManager.IsSignedIn(User))
+    {
+        ApplicationUser currentUser = await UserManager.GetUserAsync(User);
+        var roles = await UserManager.GetRolesAsync(currentUser);
+        isAdmin = roles.Contains("Admin");
+        isCustomer = roles.Contains("Customer");
+    }
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
