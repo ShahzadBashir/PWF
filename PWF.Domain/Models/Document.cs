@@ -18,6 +18,6 @@ namespace PWF.Domain.Models
         public DateTimeOffset? DeletedAt { get; set; }
 
         public virtual User User { get; set; }
-        public bool Status { get; set; } // ********************************
+        public bool Status { get; set; } // TODO: Check Document Status usage
     }
 }

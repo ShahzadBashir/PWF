@@ -7,6 +7,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PWF.Domain.Models
 {
+    public enum EmailSendStatus
+    {
+        Pending,
+        Promised,
+        Sent,
+        Failed
+    }
+
     public class Email
     {
         [Required]
@@ -21,8 +29,8 @@ namespace PWF.Domain.Models
         public string Body { get; set; }
         public string CreatedBy { get; set; }
         public bool IsHTML { get; set; }
-        public bool Sent { get; set; }
-        public string Status { get; set; } // ********************************
+
+        public EmailSendStatus Status { get; set; }
         public DateTimeOffset CreatedAt { get; set; }
         public DateTimeOffset UpdatedAt { get; set; }
     }
