@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PWF.Domain.Models
 {
-    public class Customer : User
+    public class Customer : ApplicationUser
     {
         public DateTime? BirthDate { get; set; }
 

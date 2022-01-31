@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PWF.Domain.Models
 {
-    public class Employee : User
+    public class Employee : ApplicationUser
     {
         public virtual List<Delivery> Deliveries { get; set; }
     }

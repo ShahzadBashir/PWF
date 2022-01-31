@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using PWF.Domain.Models;
 using PWF.Domain.ViewModels;
 using PWF.Persistence;
 

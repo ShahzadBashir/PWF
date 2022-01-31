@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace PWF.Domain.Models
 {
-    public class User : IdentityUser<int>
+    public class ApplicationUser : IdentityUser
     {
         [Required]
-        public string FirstName { get; set; }
+        public string? FirstName { get; set; }
         [Required]
-        public string LastName { get; set; }
-        public string Description { get; set; }
+        public string? LastName { get; set; }
+        public string? Description { get; set; }
         public DateTimeOffset CreatedAt { get; set; }
         public DateTimeOffset UpdatedAt { get; set; }
         public bool Enabled { get; set; }

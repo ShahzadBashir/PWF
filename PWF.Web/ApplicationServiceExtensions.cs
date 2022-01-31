@@ -4,6 +4,8 @@ using PWF.Persistence;
 using PWF.Services.Email;
 using PWF.Services.Settings;
 using PWF.Services.PaymentGateway;
+using PWF.Domain.Models;
+
 namespace PWF.Web.Extension
 {
     public static class ApplicationServiceExtensions

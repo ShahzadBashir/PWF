@@ -10,11 +10,10 @@ namespace PWF.Domain.Models
 {
     public class ShoppingCartDetail
     {
-        [Key, ForeignKey("ShoppingCart")]
-        [Column(Order = 1)]
+        [Key]
+        public int Id { get; set; }
         public int ShoppingCartId { get; set; }
-        [Key, ForeignKey("Product")]
-        [Column(Order = 2)]
+       
         public int ProductId { get; set; }
 
         public int Quantity { get; set; }

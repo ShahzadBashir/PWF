@@ -10,11 +10,11 @@ namespace PWF.Domain.Models
 {
     public class InvoiceDetail
     {
-        [Key, ForeignKey("Invoice")]
-        [Column(Order = 1)]
+        [Key]
+        public int Id { get; set; }
+        
         public int InvoiceId { get; set; }
-        [Key, ForeignKey("Product")]
-        [Column(Order = 2)]
+        
         public int ProductId { get; set; }
 
         public int Quantity { get; set; }
