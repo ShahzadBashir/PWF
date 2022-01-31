@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace PWF.Domain.Models
 {
+    // Suggested to be deleted according to replacements by issue 13
     public class Building
     {
         public int Id { get; set; }
