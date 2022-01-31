@@ -1,11 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PWF.Services;
+using PWF.Services.Models;
+using PWF.Services.PaymentGateway;
 
 namespace PWF.Web.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly IStripeService istripeService;
+        public HomeController(IStripeService istripeService)
         {
+            this.istripeService = istripeService;
+            
+        }
+        public async Task<IActionResult>  Index()        {
+           
+           var dd = await this.istripeService.CreateaCharge();
+
+            //return View(dd);
             return View();
         }
     }
